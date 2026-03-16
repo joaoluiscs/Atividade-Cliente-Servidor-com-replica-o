@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: server-replica2
+
+server:
+  port: 8082
+
+cluster:
+  node-id: 8082
+  nodes:
+    - http://localhost:8080
+    - http://localhost:8081
+    - http://localhost:8082

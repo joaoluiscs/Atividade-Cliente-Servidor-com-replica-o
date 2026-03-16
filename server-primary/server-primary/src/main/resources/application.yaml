@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: server-primary
+
+server:
+  port: 8080
+
+cluster:
+  node-id: 8080
+  nodes:
+    - http://localhost:8080
+    - http://localhost:8081
+    - http://localhost:8082
